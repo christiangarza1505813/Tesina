@@ -13,10 +13,10 @@ from reportlab.lib.styles import getSampleStyleSheet,ParagraphStyle
 # Arma tu cadena de conexión ODBC
 connection_string = (
     "DRIVER={ODBC Driver 18 for SQL Server};"
-    "SERVER=p-sqlcoppelaccess1;"
-    "DATABASE=APZ_CAC_DATA_01;"
-    "UID=CoppelAccessDashboard;"
-    "PWD=Coppel@01;"
+    "SERVER=p-;"
+    "DATABASE=;"
+    "UID=;"
+    "PWD=;"
     "Encrypt=yes;"
     "TrustServerCertificate=yes;"
 )
@@ -233,3 +233,4 @@ df_final_merged.isna().sum()
 #endregion
 
 df_final_merged.to_csv("user_clasification.csv", index=False)
+
